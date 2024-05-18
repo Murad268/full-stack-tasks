@@ -1,0 +1,128 @@
+@import './mixins.scss';
+@import "./variables.scss";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $base-font;
+  ;
+}
+
+input,
+button {
+  border: 2px solid $base-color;
+  border-radius: 5px;
+  padding-left: 20px;
+
+  font-size: $base-color;
+  height: $main-height;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.error_input {
+    border: 1px solid $main-red;
+  }
+}
+
+input {
+  font-size: 15px;
+
+  &::placeholder {
+    @include font-sizes(12px, 25px);
+  }
+}
+
+button {
+  cursor: pointer;
+  @include font-sizes(12px, 25px);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    max-width: 550px;
+    box-shadow: $base-shadow-font 0px 7px 29px 0px;
+    padding: 60px;
+
+    &_header {
+      text-align: center;
+      max-width: 95%;
+
+      margin: 0 auto;
+      margin-bottom: 45px;
+
+      h1 {
+        @include font-sizes(15px, 50px);
+        font-weight: 900;
+      }
+
+      p {
+        @include font-sizes(8px, 26px);
+        ;
+        margin-top: 20px;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .error {
+        margin-top: 8px;
+        color: $main-red;
+        display: none;
+        @include font-sizes(8px, 12px);
+
+        &.active {
+          display: block;
+        }
+      }
+
+      div {
+
+        overflow: hidden;
+
+        &:first-child {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+          column-gap: 15px;
+
+          div {
+            display: flex;
+
+            flex-direction: column;
+          }
+
+          input {
+            height: $main-height;
+          }
+
+        }
+
+        &:not(:first-of-type) {
+
+          input {
+            width: 100%;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: $main-height;
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
