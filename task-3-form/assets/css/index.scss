@@ -7,7 +7,133 @@
   box-sizing: border-box;
   font-family: Roboto;
 }
-
+body {
+  background-color: $bg;
+}
 a {
   text-decoration: none;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input,
+select {
+
+  background: $base-bg;
+  border: none;
+  height: 35px;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 12px;
+  color: $base-color;
+}
+
+button {
+  display: block;
+  color: $main-white;
+  background-color: $main-orange;
+  border: none;
+  max-width: 140px;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50px;
+
+}
+
+.agree input {
+  width: 15px;
+ 
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+        background: $main-white;
+    .donate {
+      div {
+        display: flex;
+        align-items: center;
+        column-gap: 9px;
+        div {
+          &:first-child {
+            flex: 95%;
+          }
+          &:last-child {
+            flex: 3%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    form {
+      @include column(25px);
+      &>div {
+        @include column(15px)
+      }
+    }
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    .first_name,
+    .second_name {
+      color: $base-color
+    }
+    &_header {
+      &_image {
+        margin: 0 auto;
+        width: 120px
+      }
+
+      h2,
+      p {
+
+        font-weight: 400;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 45px;
+
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .names {
+      div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        column-gap: 15px;
+
+        div {
+          @include column(15px)
+
+        }
+      }
+    }
+
+    .agree {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      flex-direction: row;
+    }
+  }
 }

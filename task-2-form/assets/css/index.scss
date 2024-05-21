@@ -26,7 +26,7 @@ button {
   background: $base-bg;
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: $main-white;
   font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
@@ -40,7 +40,7 @@ main {
 
   .form {
     border-radius: 6px;
-    background: #fff;
+    background: $main-white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
     padding: 35px;

@@ -1,3 +1,5 @@
-@mixin font-sizes($min, $max) {
-  font-size: clamp($min, 5vw, $max);
+@mixin column($gap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $gap
 }
