@@ -1,0 +1,3 @@
+@mixin font-sizes($min, $max) {
+  font-size: clamp($min, 5vw, $max);
+}
