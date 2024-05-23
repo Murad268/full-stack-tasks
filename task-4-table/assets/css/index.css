@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+a {
+  text-decoration: none;
+}
+main {
+  padding: 20px;
+}
+table {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+thead {
+  background-color: rgba(97,32,240,255);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 29px 51px;
+  text-align: center;
+}
+
+.btn {
+  max-width: 150px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(93,41,213,255);
+  color: white;
+  font-size: 20px
+}
+
+.tld {
+  background-color: rgba(235,235,247,255);
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.register, .transfer {
+  background-color: rgba(245,246,251,255);
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
