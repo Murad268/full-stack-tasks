@@ -24,7 +24,9 @@ thead {
   font-size: 20px;
   font-weight: bold;
 }
-
+thead td {
+   padding: 35px 51px !important;
+}
 td, th {
   padding: 29px 51px;
   text-align: center;
